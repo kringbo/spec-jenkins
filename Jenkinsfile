@@ -11,7 +11,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                sh "dotnet test .\WebApp.DataStoreTest\WebApp.DataStoreTest.csproj"
+                sh "dotnet test ./WebApp.DataStoreTest/WebApp.DataStoreTest.csproj"
             }
         }
         stage('Deploy') {
