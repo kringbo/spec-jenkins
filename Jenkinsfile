@@ -5,8 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Bygger WebApp'
-                sh "dotnet clean ./WebApp.sln"
-                sh "dotnet build ./WebApp.sln"
+                sh "dotnet clean ./WebApp/WebApp.sln"
+                sh "dotnet build ./WebApp/WebApp.sln"
             }
         }
         stage('Test') {
