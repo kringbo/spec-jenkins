@@ -20,5 +20,7 @@ RUN apt-get install -y dotnet-sdk-5.0 && \
     export PATH=$PATH:$HOME/dotnet && \
     dotnet --version
 
+ENV TZ=CET-1CEST-2,M3.5.0/02:00:00,M10.5.0/03:00:00
+
 # Good idea to switch back to the jenkins user.
 USER jenkins
